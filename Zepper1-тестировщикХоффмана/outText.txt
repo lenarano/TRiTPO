@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <string.h>
+
+int SoNode = 0;
+
+#define  MAX_NODE 511 
+typedef struct NODE
+{
+    char   c;     
+    int     freq;   
+    bool    flag;  
+    int     left;  
+    int     right; 
+};
+NODE huffTree[MAX_NODE];
+
