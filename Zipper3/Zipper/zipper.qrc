@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="Zipper">
+    <file>Resources/Bandizip.png</file>
+  </qresource>
+</RCC>
