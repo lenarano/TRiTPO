@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>Help</title>
+	</head>
+	
+	<style>
+   p {
+    text-indent: 20px; /* Отступ первой строки в пикселах */
+   }
+	</style>
+	
+	
+	<body style = "background-color: #F8E0EC">
+	<H2 align ="center">Консольная версия(CLI)</H2>
+	<img src="./Resources/site/images/cli.png" height="125" width="493"  alt="Zipper">
+	<p align="justify"> Процесс использования приложения в консольном режиме предназначен для продвинутых пользователей.</p>
+	<ul>
+	<li align="justify">Для запуска приложения в режиме консольного использования необходимо первым параметром запуска
+	передать  <b>«-no-gui»</b>.</li> 
+	<li align="justify">Параметр <b>«-pack»</b> указывает на необходимость упаковки (compress), параметр <b>«-unpack»</b>
+	- на необходимость распаковки (decompress).</li> 
+	<li align="justify">После следующего параметра <b>«-files»</b> прописывается путь к файлу(ам).</li>
+	<li align="justify">После <b>«-path»</b> указывается путь, по которому будет распологаться файл(лы).</li> 
+	<li align="justify">Последний параметр <b>«-name»</b> используется при сжатии и позволяет указать имя для файла-архива.</li>
+	<p align="justify"><b>Примеры задания параметров:</b><p>
+	<p align="justify"><b>Архивация</b><i >-no-gui -pack -files C:\test\text1.txt C:\test\text2.txt C:\test\text3.txt -path C:\test -name proba</i></p>
+	<p align="justify"><b>Разархивация</b><i>-no-gui -unpack -files C:\test\proba.bin -path C:\test\unpack</i></p>
+	</ul>
+	
+	</body>
+
+
+
+</html>
