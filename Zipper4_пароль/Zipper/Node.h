@@ -18,12 +18,13 @@ private:
 	std::list<Node*> package;//комплект(лист указателей на узлы)
 	Node *left, *right;
 	char letter;//буква
+
 public:
-	int matches;//совпадения
-		
+	
 	Node();
 	Node(Node *L, Node *R);
 	
+	int matches;//совпадения
 	void setLetter(char s);
 	char getLetter();
 	Node * getRight();

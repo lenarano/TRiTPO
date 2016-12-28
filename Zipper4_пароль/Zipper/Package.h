@@ -6,7 +6,6 @@
 #include <vector>
 #include <clocale>
 #include <qstringlist>
-
 #include <conio.h>
 
 
@@ -21,18 +20,19 @@ private:
 	std::string real_bin_file;   // имя выходного файла-архива( используется при архивации )
 	std::string hoff_bin_file;
 	std::string unhoff_bin_file;
+	char *tok;
+	char *info_block;
+	FILE *bin;
+
 public:
 	Package(std::vector<std::string> &vec, std::string p, std::string n,std::string par);
 	~Package();
-	
-	char *tok;
-	FILE *bin;
-	char *info_block;
+		
+	FILE * getBin();
 	std::string getPassword();
 	std::string getReal_bin_file();
 	std::string getHoff_bin_file();
 	std::string getUnhoff_bin_file();
-
 	void getInfo();   // Метод для получения информации о файлах на этапе архивации
 	void packaging();   // Упаковка данных
 	void unPacking1(std::string binary);   // Распаковка данных ( binary - путь до архива )

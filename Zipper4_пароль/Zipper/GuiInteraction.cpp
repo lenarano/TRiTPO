@@ -24,7 +24,7 @@ void GuiInteraction::cleaning()
 {
 	ifFileArchive=false;
 	ifFilePath=false;
-	dialogNameFile.ifFileName=false;
+	dialogNameFile.setIfFileName(false);
 	files.clear();
 	Wood.getCounting().clear();
 	path = "";
@@ -167,7 +167,7 @@ void GuiInteraction::openDir()
 
 void GuiInteraction::nameFile()
 {
-	while (!dialogNameFile.ifFileName)
+	while (!dialogNameFile.getIfFileName())
 	{
 		if (dialogNameFile.exec() == QDialog::Accepted) 
 		{
@@ -175,11 +175,11 @@ void GuiInteraction::nameFile()
 		}
 		else 
 		{
-			dialogNameFile.ifWarning = QMessageBox::warning(0,"Warning", "Attention! When archiving, you must specify the name of the file-archive," 
-				"\n Do you want to stop the backup process?", "Yes", "No", QString(), 0, 1 ); 
-			if(!dialogNameFile.ifWarning) 
+			dialogNameFile.setIfWarning(QMessageBox::warning(0,"Warning", "Attention! When archiving, you must specify the name of the file-archive," 
+				"\n Do you want to stop the backup process?", "Yes", "No", QString(), 0, 1 )); 
+			if(!dialogNameFile.getIfWarning()) 
 			{ 
-				dialogNameFile.ifFileNameCleaning=true;
+				dialogNameFile.setIfFileNameCleaning(true);
 				cleaning();
 				break;
 			}
@@ -205,11 +205,11 @@ void GuiInteraction::archiveFile()
 		{
 			nameFile();
 
-			if(dialogNameFile.ifFileNameCleaning)
+			if(dialogNameFile.getIfFileNameCleaning())
 			{
 				QMessageBox::information(0, "Information", "The output is initiated by the user.\n If necessary repeat the process again!");
 				cleaning();
-				dialogNameFile.ifFileNameCleaning=false;
+				dialogNameFile.setIfFileNameCleaning(false);
 			}
 			else
 			{
@@ -249,17 +249,16 @@ void GuiInteraction::dearchiveFile()
 			Нaff.unСompression(Wood.getCounting(),files,zip);//разархивация
 			zip->unPacking1(zip->getUnhoff_bin_file());
 			if(zip->getPassword()!="нет_пароля") dialogNameFile.PasswordVerification(zip->getPassword());
-			if(dialogNameFile.check==true||zip->getPassword()=="нет_пароля")
+			if(dialogNameFile.getCheck()==true||zip->getPassword()=="нет_пароля")
 			{
 				zip->unPacking2(zip->getUnhoff_bin_file());
 				QApplication::restoreOverrideCursor();
 				QMessageBox::information(0, "Information", "Unzipping produced!");
-				dialogNameFile.check=false;
-				
+				dialogNameFile.setCheck(false);
 			}
 			else
 			{
-				fclose(zip->bin);
+				fclose(zip->getBin());
 				remove((zip->getUnhoff_bin_file()).c_str());
 				msb.setText("Error! Try again!");
 				msb.exec();

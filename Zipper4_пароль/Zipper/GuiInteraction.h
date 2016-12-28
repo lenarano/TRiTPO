@@ -4,10 +4,8 @@
 #include <QtWidgets/QMainWindow>
 #include <QApplication>
 #include <QFileDialog>
-#include <QMessageBox>
 #include <QTextStream>
 #include <QTextEdit>
-#include <QInputDialog>
 #include "Haffman.h"
 #include "NameDialog.h" 
 

@@ -1,19 +1,18 @@
-﻿Сборка начата 25.12.2016 19:39:52.
-     1>Проект "C:\Users\лена\Documents\Visual Studio 2012\Zipper\Zipper\Zipper.vcxproj" в узле 2 (целевые объекты Build).
-     1>CustomBuild:
-         Moc'ing NameDialog.h...
-       ClCompile:
-         C:\Program Files\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I.\GeneratedFiles /I. /IC:\Qt\Qt5.5.1\5.5\msvc2012\include /I.\GeneratedFiles\Debug /IC:\Qt\Qt5.5.1\5.5\msvc2012\include\QtCore /IC:\Qt\Qt5.5.1\5.5\msvc2012\include\QtGui /IC:\Qt\Qt5.5.1\5.5\msvc2012\include\QtWidgets /Zi /nologo /W1 /WX- /Od /Oy- /D UNICODE /D WIN32 /D WIN64 /D QT_DLL /D QT_CORE_LIB /D QT_GUI_LIB /D QT_WIDGETS_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt GeneratedFiles\Debug\moc_GuiInteraction.cpp GeneratedFiles\Debug\moc_GuiInterface.cpp GeneratedFiles\Debug\moc_NameDialog.cpp GuiInteraction.cpp GuiInterface.cpp main.cpp NameDialog.cpp
+﻿Сборка начата 28.12.2016 15:01:10.
+     1>Проект "G:\bguir_git\Zipper4_пароль\Zipper\Zipper.vcxproj" в узле 2 (целевые объекты Build).
+     1>ClCompile:
+         C:\Program Files\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I.\GeneratedFiles /I. /IC:\Qt\Qt5.5.1\5.5\msvc2012\include /I.\GeneratedFiles\Debug /IC:\Qt\Qt5.5.1\5.5\msvc2012\include\QtCore /IC:\Qt\Qt5.5.1\5.5\msvc2012\include\QtGui /IC:\Qt\Qt5.5.1\5.5\msvc2012\include\QtWidgets /Zi /nologo /W1 /WX- /Od /Oy- /D UNICODE /D WIN32 /D WIN64 /D QT_DLL /D QT_CORE_LIB /D QT_GUI_LIB /D QT_WIDGETS_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt CommandLine.cpp GeneratedFiles\Debug\moc_GuiInteraction.cpp GeneratedFiles\Debug\moc_GuiInterface.cpp GuiInteraction.cpp GuiInterface.cpp Haffman.cpp main.cpp Node.cpp
+         CommandLine.cpp
          moc_GuiInteraction.cpp
          moc_GuiInterface.cpp
-         moc_NameDialog.cpp
          GuiInteraction.cpp
          GuiInterface.cpp
+         Haffman.cpp
          main.cpp
-         NameDialog.cpp
+         Node.cpp
          Создание кода...
        Link:
-         C:\Program Files\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\лена\Documents\Visual Studio 2012\Zipper\Win32\Debug\\Zipper.exe" /NOLOGO /LIBPATH:C:\Qt\Qt5.5.1\5.5\msvc2012\lib qtmaind.lib Qt5Cored.lib Qt5Guid.lib Qt5Widgetsd.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\лена\Documents\Visual Studio 2012\Zipper\Win32\Debug\Zipper.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\лена\Documents\Visual Studio 2012\Zipper\Win32\Debug\Zipper.lib" /MACHINE:X86 /SAFESEH Debug\CommandLine.obj
+         C:\Program Files\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"G:\bguir_git\Zipper4_пароль\Win32\Debug\\Zipper.exe" /NOLOGO /LIBPATH:C:\Qt\Qt5.5.1\5.5\msvc2012\lib qtmaind.lib Qt5Cored.lib Qt5Guid.lib Qt5Widgetsd.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"G:\bguir_git\Zipper4_пароль\Win32\Debug\Zipper.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"G:\bguir_git\Zipper4_пароль\Win32\Debug\Zipper.lib" /MACHINE:X86 /SAFESEH Debug\CommandLine.obj
          Debug\moc_GuiInteraction.obj
          Debug\moc_GuiInterface.obj
          Debug\moc_InfoBrowser.obj
@@ -26,9 +25,9 @@
          Debug\NameDialog.obj
          Debug\Node.obj
          Debug\Package.obj
-         Zipper.vcxproj -> C:\Users\лена\Documents\Visual Studio 2012\Zipper\Win32\Debug\Zipper.exe
-     1>Построение проекта "C:\Users\лена\Documents\Visual Studio 2012\Zipper\Zipper\Zipper.vcxproj" завершено (целевые объекты Build).
+         Zipper.vcxproj -> G:\bguir_git\Zipper4_пароль\Win32\Debug\Zipper.exe
+     1>Построение проекта "G:\bguir_git\Zipper4_пароль\Zipper\Zipper.vcxproj" завершено (целевые объекты Build).
 
 Построение успешно завершено.
 
-Затраченное время: 00:00:13.45
+Затраченное время: 00:00:12.55

@@ -25,6 +25,8 @@ std::string Package::getHoff_bin_file(){return hoff_bin_file;}
 
 std::string Package::getUnhoff_bin_file(){return unhoff_bin_file;}
 
+FILE * Package::getBin() { return bin; }
+
 std::string Package::get_file_name(std::string fn)
 {
 	std::string rezultat;
@@ -36,7 +38,6 @@ std::string Package::get_file_name(std::string fn)
 
 	return rezultat;
 }
-
 
 
 int Package::digs(double w)

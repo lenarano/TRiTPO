@@ -23,10 +23,11 @@
 	- на необходимость распаковки (decompress).</li> 
 	<li align="justify">После следующего параметра <b>«-files»</b> прописывается путь к файлу(ам).</li>
 	<li align="justify">После <b>«-path»</b> указывается путь, по которому будет распологаться файл(лы).</li> 
-	<li align="justify">Последний параметр <b>«-name»</b> используется при сжатии и позволяет указать имя для файла-архива.</li>
+	<li align="justify">Параметр <b>«-name»</b> используется при сжатии и позволяет указать имя для файла-архива.</li>
+	<li align="justify">Последний параметр <b>«-password»</b> позволяет указать пароль для файла-архива.</li>
 	<p align="justify"><b>Примеры задания параметров:</b><p>
-	<p align="justify"><b>Архивация</b><i >-no-gui -pack -files C:\test\text1.txt C:\test\text2.txt C:\test\text3.txt -path C:\test -name proba</i></p>
-	<p align="justify"><b>Разархивация</b><i>-no-gui -unpack -files C:\test\proba.bin -path C:\test\unpack</i></p>
+	<p align="justify"><b>Архивация</b><i >-no-gui -pack -files C:\test\text1.txt C:\test\text2.txt C:\test\text3.txt -path C:\test -name proba -password пароль</i></p>
+	<p align="justify"><b>Разархивация</b><i>-no-gui -unpack -files C:\test\proba.bin -path C:\test\unpack -password пароль</i></p>
 	</ul>
 	
 	</body>

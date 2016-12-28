@@ -46,6 +46,21 @@ std::string NameDialog::getFileName(){return fileName;}
 
 QString NameDialog::getName(){return name;}
 
+bool NameDialog::getCheck() { return check; }
+
+bool NameDialog::getIfWarning() { return ifWarning; }
+
+void NameDialog::setIfWarning(bool b) { ifWarning = b; }
+
+void NameDialog::setCheck(bool b) { check = b; }
+
+bool NameDialog::getIfFileNameCleaning() { return ifFileNameCleaning; }
+
+void NameDialog::setIfFileNameCleaning(bool b) { ifFileNameCleaning = b; }
+
+bool NameDialog::getIfFileName() { return ifFileName; }
+
+void NameDialog::setIfFileName(bool b) { ifFileName = b; }
 
 void NameDialog::findClicked() { 
 	name = lineEdit->text(); 
@@ -53,10 +68,10 @@ void NameDialog::findClicked() {
 	if (caseSensitive) 
 		ContinuePasswordName(); 
 	else 
-		{
-			ContinueName(name,fileName); 
-			parole="нет_пароля";
-	    }
+	{
+		ContinueName(name,fileName); 
+		parole="нет_пароля";
+	}
 	lineEdit->clear();
 } 
 
@@ -89,7 +104,7 @@ void NameDialog::ContinueName(const QString &str, std::string &fileName)
 			ifFileName=true;
 			QByteArray ba = str.toLocal8Bit();
 			fileName = std::string(ba.data(), ba.size());  
-			
+
 		}
 		else
 		{
@@ -113,5 +128,5 @@ void NameDialog::PasswordVerification(std:: string &password)
 	QByteArray ba = Password.toLocal8Bit();
 	std::string enterPassword= std::string(ba.data(), ba.size()); 
 	if(enterPassword==password){check=true;}
-		
+
 }

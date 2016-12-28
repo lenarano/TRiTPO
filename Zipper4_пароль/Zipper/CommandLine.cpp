@@ -6,7 +6,7 @@ CommandLine::CommandLine()
 {
 	path = "";
 	name ="";
-	password ="";
+	password ="нет_пароля";
 	flag_fs = false;
 	flag_path = false;
 	flag_name= false;
@@ -59,13 +59,13 @@ void CommandLine::command(int &argv, char* argc[])
 			if(zip->getPassword()==password){zip->unPacking2(zip->getUnhoff_bin_file());}
 			else 
 			{
-				fclose(zip->bin);
+				fclose(zip->getBin());
 				remove((zip->getUnhoff_bin_file()).c_str());
 				std::cout<<"Неверный пароль! Попробуйте еще раз!"<<std::endl;
 			}
 		}
 	}
-	else std::cout<<"Параметры -pack/-unpack , -files, -path, -password обязательны!"<<std::endl;
+	else std::cout<<"Параметры -pack/-unpack , -files, -path обязательны!"<<std::endl;
 	std::cout<<std::endl<<"########################################################"<<std::endl<<std::endl;
 	std::cout << "Время выполнения = " << clock()/1000.0 << std::endl; // время работы программы
 
